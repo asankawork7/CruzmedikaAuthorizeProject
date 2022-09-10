@@ -1,0 +1,58 @@
+openapi: 3.0.1
+info:
+  title: cruzmedikaauthorizeAPI
+  description: API Definition of cruzmedikaauthorizeAPI
+  version: 1.0.0
+servers:
+- url: http://localhost:8290/cruzmedikaAuthorize
+paths:
+  /:
+    get:
+      responses:
+        default:
+          description: Default response
+  /CreatePatientUser:
+    post:
+      requestBody:
+        description: Sample Payload
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                payload:
+                  type: object
+        required: false
+      responses:
+        default:
+          description: Default response
+  /UpdatePatientUser:
+    post:
+      requestBody:
+        description: Sample Payload
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                payload:
+                  type: object
+        required: false
+      responses:
+        default:
+          description: Default response
+  /GetPatientUser:
+    post:
+      requestBody:
+        description: Sample Payload
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                payload:
+                  type: object
+        required: false
+      responses:
+        default:
+          description: Default response
